@@ -78,6 +78,11 @@ app.use(flash());
 
 app.use(passport.initialize());// initialize passport
 app.use(passport.session());// use passport to manage sessions
+
+app.use((req, res, next) => {
+    res.locals.currentUser = req.user;
+    next();
+});
 passport.use(new LocalStrategy(User.authenticate()));// use local strategy for authentication
 passport.serializeUser(User.serializeUser());// how to store user in session
 passport.deserializeUser(User.deserializeUser());// how to get user from session
