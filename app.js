@@ -79,10 +79,7 @@ app.use(flash());
 app.use(passport.initialize());// initialize passport
 app.use(passport.session());// use passport to manage sessions
 
-app.use((req, res, next) => {
-    res.locals.currentUser = req.user;
-    next();
-});
+
 passport.use(new LocalStrategy(User.authenticate()));// use local strategy for authentication
 passport.serializeUser(User.serializeUser());// how to store user in session
 passport.deserializeUser(User.deserializeUser());// how to get user from session
@@ -91,7 +88,7 @@ app.use((req, res, next) => {// middleware to set flash messages in res.locals
     res.locals.success = req.flash('success');
     console.log(res.locals.success);
     res.locals.error = req.flash('error');
-    res.locals.currentUser = req.user;
+    res.locals.currentUser = req.user||null;
     next();
 });
 
