@@ -18,6 +18,9 @@ body{
   background-color: rgb(228, 40, 40);
   padding-bottom: 1rem;
 }
+.custom-navbar {
+    background-color: rgb(193, 39, 39) !important;
+}
 
 .navbar-nav {
   gap: 0.5rem;
