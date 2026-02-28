@@ -10,17 +10,15 @@ body{
 
 /* Added styles for navbar */
 .navbar{
-    background-color: rgb(193, 39, 39);
+    background-color: white;
     padding: 1rem 0;
 }
 
 .navbar-collapse {
-  background-color: rgb(228, 40, 40);
+  background-color: white;
   padding-bottom: 1rem;
 }
-.custom-navbar {
-    background-color: rgb(193, 39, 39) !important;
-}
+
 
 .navbar-nav {
   gap: 0.5rem;
