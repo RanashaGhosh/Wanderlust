@@ -7,20 +7,22 @@
     width: 100%;
   }
   .search-btn {
-    background-color: #ff385c;
+    background-color: #fe424d;
     color: white;
     border-radius: 25px;
     padding: 0 1rem 0 1rem;
   }
   .search-btn:hover {
-    background-color: #ff385c;
+    background-color: #fe424d;
     color: white;
   }
   .search-btn i{
+    display: inline;
     margin-right: 0.5rem;
   }
   .search-input{
     border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 0.875rem;
   }
 
@@ -48,10 +50,11 @@
   </div>
 
   <!-- Search -->
+  <div class="navbar-nav ms-auto"> 
   <form class="d-flex align-items-center mx-auto search-form" role="search">
   
   <input
-    class="form-control search-input"
+    class="form-control me-2 search-input"
     type="search"
     placeholder="Search destinations"
   />
@@ -62,7 +65,7 @@
   </button>
 
 </form>
-
+</div>
   <!-- Right Links -->
   <div class="navbar-nav ms-md-auto">
     <a class="nav-link" href="/listings/new">Airbnb your home</a>
