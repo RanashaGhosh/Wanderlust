@@ -1,4 +1,11 @@
 <style>
+  .custom-navbar {
+    background-color: white;
+  }
+  .search-form {
+    max-width: 400px;
+    width: 100%;
+  }
   .search-btn {
     background-color: #ff385c;
     color: white;
@@ -41,15 +48,15 @@
   </div>
 
   <!-- Search -->
-  <form class="d-flex flex-column flex-md-row my-2 my-md-0 w-100 w-md-auto" role="search">
+  <form class="d-flex align-items-center mx-auto search-form" role="search">
   
   <input
-    class="form-control mb-2 mb-md-0 me-md-2 search-input"
+    class="form-control search-input"
     type="search"
     placeholder="Search destinations"
   />
 
-  <button class="btn search-btn w-100 w-md-auto" type="submit">
+  <button class="btn search-btn ms-2" type="submit">
     <i class="fa-solid fa-magnifying-glass"></i>
     <span class="d-none d-md-inline">Search</span>
   </button>
