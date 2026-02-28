@@ -10,8 +10,16 @@ body{
 
 /* Added styles for navbar */
 .navbar{
-    height: 8rem;
     background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 768px){
+    .navbar{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
 }
 .fa-compass{
     color: #fe424d;
