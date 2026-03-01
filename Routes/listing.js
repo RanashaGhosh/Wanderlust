@@ -48,6 +48,8 @@ router.get('/:id/edit',
     WrapAsync(listingController.edit)
 );
 
+// Search route
+
 
 module.exports = router;
 
