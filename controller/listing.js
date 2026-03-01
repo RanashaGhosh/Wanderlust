@@ -18,7 +18,7 @@ module.exports.index = async (req, res) => {
     } else {
         allListings = await Listing.find({});
     }
-    res.render("listings/index", { allListings });
+    res.render("listings/index", { listings: allListings, search });
 };
 
 module.exports.new = (req, res) => {
